@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desugn Grafis</title>
+  <link rel="stylesheet" href="designg.css">
+  </head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">Anggun Bastiyar</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+  <div class="title">DESIGN GRAFIS</div>
+
+  <div class="project-container">
+    <div class="project-card">
+  <img src="game.jpg" alt="Project 1" onclick="openModal(this)">
+  <div class="desc">game display</div>
+</div>
+
+    <div class="project-card">
+      <img src="Banner2 putri (2).png" alt="Project 2"onclick="openModal(this)">
+      <div class="desc">banner design</div>
+    </div>
+    <div class="project-card">
+      <img src="Banner1 putri (2).png" alt="Project 3"onclick="openModal(this)">
+      <div class="desc">banner design</div>
+    </div>
+    <div class="project-card">
+      <img src="KARAKTER_3_Anggun Bastiyar.png" alt="Project 4"onclick="openModal(this)">
+      <div class="desc">Vector Character</div>
+    </div>
+    <div class="project-card">
+      <img src="DESAIN WAJAH_3_Anggun Bastiyar.png" alt="Project 5"onclick="openModal(this)">
+      <div class="desc">Vector Face</div>
+    </div>
+  </div>
+  <div id="imgModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+</div>
+
+<script>
+  function openModal(img) {
+    var modal = document.getElementById("imgModal");
+    var modalImg = document.getElementById("modalImg");
+    var caption = document.getElementById("caption");
+
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+    caption.innerHTML = img.alt;
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+</script>
+
+
+
+</body>
+</html>

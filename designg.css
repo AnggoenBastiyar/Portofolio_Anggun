@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+overflow-x: hidden;
+background-color: rgb(0, 0, 0) ;
+padding-top: 100px;
+}
+
+header {
+    padding-top: 20%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #000000;
+    z-index: 1000; 
+    padding-bottom: 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.hero-header {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    
+}
+.wrapper{
+    width: 1280px;
+    height: 95%;
+    margin:auto 0;
+    padding: 0 20px;
+}
+header{
+    padding:40px 0 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: rgb(255, 242, 0);
+    border-radius: 50%;
+    margin-right: 30PX;
+    color: ghostwhite;
+    font-weight: 700;
+    font-size:1.5rem;
+    padding:10px;
+    margin-left:40px;
+    cursor:pointer;
+    text-align: center;
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: ghostwhite;
+
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index:5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #ffffff;
+    margin: 5px 0px;
+    width: 100%;
+    height: 15%;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+   color: rgb(226, 226, 226);
+   margin-right: 2.5rem;
+   margin-bottom: 10%;
+}
+.hero-header .navlinks li a:hover{
+    color:rgb(221, 255, 0);
+    
+}
+.container {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid#ffffff;
+    box-shadow: 2px 0px 30px rgba(255, 255, 255, 0.5);
+
+}
+.hero-pic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.project-card {
+  background: #ccc;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;         /* tinggi seragam */
+  object-fit: contain;   /* gambar tidak akan terpotong */
+  background-color: #111; /* area kosong dikasih warna hitam */
+  display: block;
+}
+
+.project-card .desc {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+/* Background overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Box */
+.modal-box {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 70%;   /* ukuran popup */
+  max-height: 80%;
+  text-align: center;
+  position: relative;
+}
+
+/* Gambar di popup */
+.modal-content {
+  max-width: 100%;
+  max-height: 70vh; /* biar tidak terlalu tinggi */
+  border-radius: 8px;
+}
+
+/* Caption */
+#caption {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: yellow;
+}

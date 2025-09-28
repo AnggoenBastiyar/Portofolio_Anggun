@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desugn Grafis</title>
+  <link rel="stylesheet" href="designg.css">
+  </head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">Anggun Bastiyar</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+  <div class="title">UI UX DESIGN</div>
+
+  <div class="project-container">
+    <div class="project-card">
+  <img src="WhatsApp Image 2025-09-25 at 14.20.57_e3aad34e.jpg" alt="Project 1" onclick="openModal(this)">
+  <div class="desc">Content videos</div>
+</div>
+
+    <div class="project-card">
+      <img src="TENGAH (3).png" alt="Project 2"onclick="openModal(this)">
+      <div class="desc">Content Feeds</div>
+    </div>
+    <div class="project-card">
+      <img src="Apa itu - Copy.png" alt="Project 3"onclick="openModal(this)">
+      <div class="desc">Design Story Intagram</div>
+    </div>
+    <div class="project-card">
+      <img src="Apa itu3 - Copy.jpg" alt="Project 4"onclick="openModal(this)">
+      <div class="desc">Design Story Intagram</div>
+    </div>
+    <div class="project-card">
+      <img src="WhatsApp Image 2025-09-25 at 14.21.19_fab63804.jpg" alt="Project 4"onclick="openModal(this)">
+      <div class="desc">Instagram feeds</div>
+    </div>
+    <div class="project-card">
+      <img src="Screenshot 2025-09-25 142349.png" alt="Project 4"onclick="openModal(this)">
+      <div class="desc">Content videos</div>
+    </div>
+   
+  
+  <div id="imgModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+</div>
+
+<script>
+  function openModal(img) {
+    var modal = document.getElementById("imgModal");
+    var modalImg = document.getElementById("modalImg");
+    var caption = document.getElementById("caption");
+
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+    caption.innerHTML = img.alt;
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+</script>
+
+
+
+</body>
+</html>
